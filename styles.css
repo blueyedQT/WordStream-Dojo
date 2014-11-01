@@ -5,28 +5,25 @@ body {
 	padding: 0px;
 	font-family: sans-serif;
 	font-size: 9pt;
+	line-height: 1.5em;
 }
 h1 {
-	padding: 13px 0 10px 10px;
+	padding: 16px 0 10px 10px;
 	margin: 0;
 }
 hr {
 	color: #A8A8A8;
 }
-#header {
-	/*May be able to delete this div completely*/
-	width: 970px;
-	display: block;
+a {
+	color: #067ba6;
 }
 #headerTop {
 	width: 970px;
 	height: 100px;
-	display: block;
-    
+	display: block;    
 }
 #nav {
 	display: inline-block;
-/*	text-align: center;*/
 	border: 1px solid #A8A8A8;
 	border-radius: 5px;
 	border-top: none;
@@ -34,7 +31,7 @@ hr {
 	border-top-left-radius: 0;
 	width: auto;
 	margin-left: 450px;
-	background-color: #F3F3ED;
+	background-color: #fafafa;
 }
 #nav ul {
 	padding: 0px 5px 10px 15px;
@@ -44,6 +41,10 @@ hr {
 	display: inline-block;
 	padding: 0px 10px 0px 5px;
 	margin: 0;
+	border-right: 1px solid gray;
+}
+#nav li:last-child {
+	border: none;
 }
 #nav a {
 	text-decoration: none;
@@ -56,15 +57,15 @@ hr {
   color: white;
   text-decoration: none;
   vertical-align: top;
-  border-width: 0px;
+  border: none;
   border-radius: 3px;
 }
 #headerMiddle {
 	height: 75px;
-	background: -webkit-linear-gradient(white 10px, rgb(248,248,248,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(255,255, 255 ,0), rgba(248,248,248,1),); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255, 255 ,0), rgba(248,248,248,1),); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255, 255 ,0), rgba(248,248,248,1)); /* Standard syntax (must be last) */
+	background: -webkit-linear-gradient(white 15px, #faf8fb);
+    background: -o-linear-gradient(white 15px, #faf8fb);
+    background: -moz-linear-gradient(white 15px, #faf8fb);
+    background: linear-gradient(white 15px, #faf8fb);
     display: block;
 }
 #logo {
@@ -73,18 +74,17 @@ hr {
 }
 #headerBottom {
 	background-color: #0066CC;
-	height: 55px;
+	height: 15px;
 	display: block;
-	/*border-top: 1px solid #3366CC;
-	border-bottom: 1px solid #3366CC;*/
 	color: white;
+	padding: 20px 0 20px 10px;
 }
 #grad1 {
 	padding-top: 15px;
-    background: -webkit-linear-gradient( rgba(248,248,248, 1), rgba(255,255, 255 ,0)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(248,248,248, 1), rgba(255,255, 255 ,0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(248,248,248, 1), rgba(255,255, 255 ,0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(248,248,248, 1), rgba(255,255, 255 ,0)); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#e7e7e7, white 45px);
+    background: -o-linear-gradient(#e7e7e7, white 45px);
+    background: -moz-linear-gradient(#e7e7e7, white 45px);
+    background: linear-gradient(#e7e7e7, white 45px);
 }
 #leftBottomH {
 	display: inline-block;
@@ -94,6 +94,7 @@ hr {
 #leftBottomH h3 {
 	display: inline;
 	vertical-align: top;
+	margin-top: 10px;
 }
 #rightBottomH {
 	margin-left: 400px;
@@ -112,6 +113,9 @@ hr {
 	padding: 0;
 	margin-left: 0;	
 }
+#contact h1 {
+	color: #24b5ea;
+}
 #sidebar {
 	width: 220px;
 	display: inline-block;
@@ -119,20 +123,27 @@ hr {
 	padding: 0px 10px 10px 15px;
 	line-height: 100%;	
 }
-p.h {
-	color: #0066CC;
-	font-size: 100%;
+#sidebar h3 {
+	color: #067ba6;
+	font-size: 130%;
 	font-weight: bolder;
-	padding: 0;
+	margin: 0 0 15px 0;
 }
-.red {
-	color: red;
+#sidebar p {
+	margin: 0;
+	line-height: 1.5em;
+}
+p.red {
+	color: #dd4708;
 	font-weight: bold;
-/*	padding-top: 0;
-	margin: 0;*/
+	margin: 0;
+}
+#sidebar a {
+	text-decoration: none;
 }
 p.center {
-	padding-left: 30px;
+	padding: 5px 0 10px 30px;
+	border-bottom: 1px solid #e7e7e7;
 }
 .button1, .button2 {
 	display: block;
@@ -146,24 +157,33 @@ p.center {
 	font-size: 120%;
 }
 .button1 {
+	margin-top: 22px;
 	background-color: #0066CC;
 }
 .button2 {
 	background-color: orange;
 }
 #adver {
-	padding-top: 15px;
+	margin-top: 20px;
 }
 #content {
 	width: 690px;
 	min-height: 300px;
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 15px;
+	padding: 5px 0 0 15px;
+}
+#content h2, h3 {
+	color: #067ba6;
+}	
+#content h2 {
+	border-top: 1px solid #e7e7e7;
+	margin: 0;
+	line-height: 2em;
 }
 #tryFree {
 	display: inline-block;
-	border: 3px solid blue;
+	border: 5px solid #88bad5;
 }
 #tryFree img {
 	margin: 4px;
@@ -176,7 +196,7 @@ p.center {
 /*	vertical-align: top;*/
 }
 #tryFree h2 {
-
+	border-top: none;
 }
 #tryFree p {
 	font-size: 120%;
